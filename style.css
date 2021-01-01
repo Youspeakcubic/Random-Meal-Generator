@@ -1,0 +1,17 @@
+h1 {
+text-align: center;
+}
+button {
+  margin-left: 47%;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+ul{
+  text-align: center;
+  list-style-type: circle;
+}
+li {
+  display:block;
+}
