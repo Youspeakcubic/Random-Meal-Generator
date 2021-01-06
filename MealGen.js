@@ -8,8 +8,8 @@ function fetchMeal() {
     .then (data => distribute(data.meals[0]))
   }
 function distribute(meal) {
-  createTitle(meal)
-  createIngre(meal)
+  createTitle(meal);
+  createIngre(meal);
 }
 //this section creates an ingredient list from the data and then adds it as a ul to our website.
 function createIngre(meal) {
@@ -31,8 +31,7 @@ in the array and then adds it to our meal container as a ul. */
       break;
     }
     else {
-          console.log(ingredient);
-          ingredientLi.appendChild(document.createTextNode(`${ingre[`${i}`]}`));
+          ingredientLi.appendChild(document.createTextNode(`${ingre[`${i}`]} |  `));
           ingreList.appendChild(ingredientLi);
           document.getElementById('mealInfo').appendChild(ingreList);
     }
@@ -40,5 +39,11 @@ in the array and then adds it to our meal container as a ul. */
 }
 function createTitle(meal) {
   let title = document.getElementById("recipeTitle");
-  title.value = `${meal[`strMeal`]}`
+  let category = document.getElementById("recipeCategory");
+  let image = document.getElementById("recipeImg");
+  let instructions = document.getElementById("instructions")
+  title.appendChild(document.createTextNode(`${meal[`strMeal`]}`));
+  category.appendChild(document.createTextNode(`Category : ${meal[`strCategory`]}`));
+  image.src = `${meal[`strMealThumb`]}`;
+  instructions.appendChild(document.createTextNode(`Instructions : ${meal[`strInstructions`]}`));
 }

@@ -2,7 +2,7 @@ h1 {
 text-align: center;
 }
 button {
-  margin-left: 47%;
+  margin-left: 48%;
 }
 p {
   font-size: 15px;
@@ -14,4 +14,14 @@ ul{
 }
 li {
   display:block;
+}
+h2{
+  text-align: center;
+}
+#instructions{
+  word-wrap: break-word;
+  float: right;
+}
+.insCont{
+float:right;
 }
