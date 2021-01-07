@@ -1,5 +1,11 @@
-h1 {
-text-align: center;
+html{
+  background-color: #FF312E;
+}
+footer{
+float:left;
+}
+img{
+  border: 5px solid #FFFFFA;
 }
 button {
   margin-left: 48%;
@@ -15,13 +21,20 @@ ul{
 li {
   display:block;
 }
+h1 {
+text-align: center;
+}
 h2{
   text-align: center;
+}
+h3{
+  width: 60%;
+  position: absolute;
+  top:30%;
+  right:0;
+  font-size: 45px;
 }
 #instructions{
   word-wrap: break-word;
   float: right;
-}
-.insCont{
-float:right;
 }
