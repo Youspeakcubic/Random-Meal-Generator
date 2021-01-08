@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <meta charset="utf-8">
     <title>Random Meal Generator :)</title>
-    <link rel="stylesheet" href="style.css"></link>
-
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="CSS/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width: 1000px)" href="CSS/tablet.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1001px)" href="CSS/Desktop.css"/>
   </head>
   <body>
     <h1>Random Meal generator</h1>
     <p>Click the button for a random meal:</p>
     <button class = "mealBtn" onclick = "fetchMeal()">Get Meal!</button>
+    <div>
     <h2 id = "recipeTitle"></h2>
     <h2 id = "recipeCategory"></h2>
     <div class = "mealInfo" id = "mealInfo"></div>
